@@ -21,6 +21,7 @@ class _DatingAppsState extends State<DatingApps> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'DatingApps',
       initialRoute: '/',
       theme: ThemeData(

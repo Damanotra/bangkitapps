@@ -1,3 +1,4 @@
+import 'package:datingapps/ui/screen/home/home.dart';
 import 'package:datingapps/ui/screen/login/login.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -7,7 +8,7 @@ class Router {
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(
-          builder: (_)=>LoginScreen(),
+          builder: (_)=>HomeScreen(),
         );
         break;
       default:
