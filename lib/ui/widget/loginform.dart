@@ -7,6 +7,9 @@ class LoginForm extends StatefulWidget {
 }
 
 class _LoginFormState extends State<LoginForm>{
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -24,16 +27,78 @@ class _LoginFormState extends State<LoginForm>{
             Center(
               child: Text(
                 "GAWAIN",
-                style: TextStyle(fontSize: size.width*0.15,color: Colors.blue),
+                style: TextStyle(fontSize: size.width*0.15,color: Colors.indigo),
               ),
             ),
             Container(
               width: size.width*0.8,
-              child: Divider(height: size.height*0.05,color: Colors.blue),
+              child: Divider(height: size.height*0.05,color: Colors.indigo),
             ),
             Padding(
                 padding: EdgeInsets.all(size.height * 0.02),
-                child: TextFormField()
+                child: TextFormField(
+                  controller: _emailController,
+                  decoration: InputDecoration(
+                    labelText: "Email",
+                    labelStyle: TextStyle(
+                        color: Colors.indigo, fontSize: size.height * 0.03),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide:
+                      BorderSide(color: Colors.indigo, width: 1.0),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide:
+                      BorderSide(color: Colors.indigo, width: 1.0),
+                    ),
+                  ),
+                )
+            ),
+            Padding(
+              padding: EdgeInsets.all(size.height * 0.02),
+              child: TextFormField(
+                controller: _passwordController,
+                autocorrect: false,
+                obscureText: true,
+                decoration: InputDecoration(
+                  labelText: "Password",
+                  labelStyle: TextStyle(
+                      color: Colors.indigo, fontSize: size.height * 0.03),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide:
+                    BorderSide(color: Colors.indigo, width: 1.0),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide:
+                    BorderSide(color: Colors.indigo, width: 1.0),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.all(size.height * 0.02),
+              child: Column(
+                children: <Widget>[
+                  GestureDetector(
+                    child: Container(
+                      height: size.height * 0.08,
+                      decoration: BoxDecoration(
+                        color: Colors.indigo,
+                        borderRadius:
+                        BorderRadius.circular(size.height * 0.005),
+                      ),
+                      child: Center(
+                        child: Text(
+                          "Login",
+                          style: TextStyle(
+                              fontSize: size.height * 0.025,
+                              color: Colors.white),
+                        ),
+                      ),
+
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
