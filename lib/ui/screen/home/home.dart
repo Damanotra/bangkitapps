@@ -1,4 +1,4 @@
-import '../../../ui/widget/tabs.dart';
+import '../../widget/tabs.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

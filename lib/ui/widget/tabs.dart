@@ -1,4 +1,4 @@
-import 'package:datingapps/ui/screen/home/matches.dart';
+import '../screen/home/matches.dart';
 import 'package:datingapps/ui/screen/home/messages.dart';
 import 'package:datingapps/ui/screen/home/search.dart';
 import 'package:flutter/cupertino.dart';
