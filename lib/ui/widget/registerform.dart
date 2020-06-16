@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class LoginForm extends StatefulWidget {
+class RegisterForm extends StatefulWidget {
   @override
-  _LoginFormState createState() => _LoginFormState();
+  _RegisterFormState createState() => _RegisterFormState();
 }
 
-class _LoginFormState extends State<LoginForm>{
+class _RegisterFormState extends State<RegisterForm>{
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
 
@@ -88,25 +88,11 @@ class _LoginFormState extends State<LoginForm>{
                       ),
                       child: Center(
                         child: Text(
-                          "Login",
+                          "Register",
                           style: TextStyle(
                               fontSize: size.height * 0.025,
                               color: Colors.white),
                         ),
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: size.height*0.02),
-                  GestureDetector(
-                    onTap: (){
-                      Navigator.of(context).pushNamed('/register');
-                    },
-                    child: Text(
-                      "Are you new? Let's create an account",
-                      style: TextStyle(
-                        fontSize: size.height*0.025,
-                        color: Colors.indigo,
-                        decoration: TextDecoration.underline
                       ),
                     ),
                   )
@@ -118,5 +104,5 @@ class _LoginFormState extends State<LoginForm>{
       ),
     );
   }
-  
+
 }

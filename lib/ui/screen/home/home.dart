@@ -1,4 +1,4 @@
-import 'package:datingapps/ui/widget/tabs.dart';
+import '../../../ui/widget/tabs.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
