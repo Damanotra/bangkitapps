@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "794063513370",
+    "firebase_url": "https://bangkitfp-e84e0.firebaseio.com",
+    "project_id": "bangkitfp-e84e0",
+    "storage_bucket": "bangkitfp-e84e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794063513370:android:f3403cd1ee4be03f13eea3",
+        "android_client_info": {
+          "package_name": "com.example.datingapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794063513370-gabc05djhoc4ds1p0dpmqqmei0di4cqh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.datingapps",
+            "certificate_hash": "72c4fb91116624c382cda433f9d2a29f1794d541"
+          }
+        },
+        {
+          "client_id": "794063513370-e3r0seq7tjfud8dhnnn6369ihv94vgjf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCajtzsg2_X1l3SbV9xGclV1aag3wRCptU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794063513370-e3r0seq7tjfud8dhnnn6369ihv94vgjf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

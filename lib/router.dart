@@ -10,7 +10,7 @@ class Router {
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(
-          builder: (_)=>ProfilesetupScreen(),
+          builder: (_)=>LoginScreen(),
         );
         break;
       case '/register':
@@ -21,6 +21,11 @@ class Router {
       case '/profilesetup':
         return MaterialPageRoute(
           builder: (_)=>ProfilesetupScreen(),
+        );
+        break;
+      case '/home':
+        return MaterialPageRoute(
+          builder: (_)=>HomeScreen(),
         );
         break;
       default:
