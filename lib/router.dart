@@ -1,5 +1,6 @@
 import 'package:datingapps/ui/screen/home/home.dart';
 import 'package:datingapps/ui/screen/login/login.dart';
+import 'package:datingapps/ui/screen/makeup/makeup.dart';
 import 'package:datingapps/ui/screen/profilesetup/profilesetup.dart';
 import 'package:datingapps/ui/screen/register/register.dart';
 import 'package:flutter/cupertino.dart';
@@ -10,7 +11,7 @@ class Router {
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(
-          builder: (_)=>LoginScreen(),
+          builder: (_)=>MakeupScreen(),
         );
         break;
       case '/register':
